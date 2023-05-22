@@ -1,6 +1,6 @@
 const colors = ["green", "red", "rgba(133,122,200)", "#f15025"];   //no es random
 
-const btn = documento.getElementById("btn");
+const btn = document.getElementById("btn");
 
 const textcolor = document.querySelector (".color");
 

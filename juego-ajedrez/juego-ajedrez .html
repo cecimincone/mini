@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tablero {
+            display: flex;
+            width: 240px;
+            flex-wrap: wrap;
+
+
+        }
+
+        .casilla {
+            width: 30px;
+            height: 30px;
+
+        }
+
+        .negro {
+            background-color: black;
+
+        }
+
+        .blanco {
+            background-color: bisque;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="tablero"></div>
+
+
+    <script>
+        function createTablero() {
+            //traernos elementos de dom
+            //elementos primitivos const no se pueden cambiar con let si//
+            const tableroDiv = document.getElementById("tablero");
+            let tableroHTML = "";
+            for (let fila = 0; fila < 8; fila++) {
+                let chessFile= "";
+                for (let col = 0; col < 8; col++); {
+                    //{ const colorCasilla = "";
+                    //if((fila + col % 2==00){
+                    //  colorCasilla = "blanco"
+                    // }else{ colorCasilla = "negro"}
+
+                    const colorCasilla = (fila + col) % 2 === 0? "blanco" : "negro";
+
+
+                    tableroHTML += `<div class="casilla${colorCasilla}"></div>`;
+                 tableroDiv.innerHTML = `<div class="tablero${ch}"></div>`;}
+
+            }
+           
+
+
+        }
+
+
+        createTablero();
+    </script>
+</body>
+
+</html>
