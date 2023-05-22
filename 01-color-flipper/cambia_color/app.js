@@ -2,7 +2,7 @@ const colors = ["green", "red", "rgba(133,122,200)", "#f15025"];   //no es rando
 
 const btn = documento.getElementById("btn");
 
-const textcolor = document.querySelector ("color");
+const textcolor = document.querySelector (".color");
 
 //creamos un funcion que devuelva un color aleatorio de la lista de colores
 
@@ -32,6 +32,7 @@ const randomColor = colors[randomIndex]
 //cambiamos el color de fondo
 document.body.style.backgroundColor = randomColor
 //cambiamos el texto con el nombre del color seleccionado
+textcolor.textContent = randomColor
 
 }) 
 
